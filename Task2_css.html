@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .t2_cont2{
+            
+            background-color:rgba(0, 255, 255, 0.452);
+            width: inherit;
+            
+        }
+
+        .t2_cont1{
+            width: fit-content;
+            border: solid black;
+            padding: 10px;
+            border-width: 2px;
+        }
+
+        .t2_div
+        {
+            color: blue;
+            padding: 5px;
+            font-size: large;
+        }
+
+        .t2_div:hover{
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .t2_cont4{
+            display: flex;
+            background-color:gainsboro;
+            width: inherit;
+            
+        }
+
+        .t2_cont3{
+            
+            width: fit-content;
+            border: solid black;
+            padding: 10px;
+            border-width: 2px;
+        }
+
+        .t2_divv
+        {
+            color: blue;
+            padding: 5px;
+            font-size: large;
+            
+        }
+
+        .t2_divv:not(:last-child)::after {
+            content: " | ";
+        }
+
+        .t2_divv:hover{
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>Task-2</h3>
+    <hr>
+    <br>
+    <div style="display: flex;">
+        <div style="margin: 10px;">
+            <h4> Vertical Navigation Bar</h4>
+            <div class="t2_cont1">
+                <div class="t2_cont2">
+                    <div class="t2_div">Home</div>
+                    <div class="t2_div">Java</div>
+                    <div class="t2_div">HTML</div>
+                    <div class="t2_div">CSS</div>
+                    <div class="t2_div">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+    
+        <div style="margin: 10px;">
+            <h4> Horizontal Navigation Bar</h4>
+            <div class="t2_cont3">
+                <div class="t2_cont4">
+                    <div class="t2_divv">Home</div>
+                    <div class="t2_divv">Java</div>
+                    <div class="t2_divv">HTML</div>
+                    <div class="t2_divv">CSS</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button><a href="index.html"  style="text-decoration: none;">Back</a></button>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .t4_container {
+            border: solid black 2px;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .t4_sidebar {
+            width: 60px;
+            height: 60px;
+            margin: 10px 10px 10px 0;
+            border-radius: 0 10px 10px 0;
+            transition: width 0.5s, background-color 0.3s;
+        }
+
+        .green {
+            background-color: rgb(20, 224, 37);
+        }
+
+        .blue {
+            background-color: rgb(0, 153, 255);
+        }
+
+        .red {
+            background-color: rgb(194, 0, 0);
+        }
+
+        .gray {
+            background-color: rgba(85, 85, 85, 0.733);
+        }
+
+        .t4_sidebar:hover {
+            width: 200px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Task-4</h3>
+    <hr>
+    <br>
+    <div class="t4_container">
+        <div style="margin: 10px;">
+            <h2>Hoverable Side Nav Buttons</h2>
+            <h4>Hover over the buttons in the left side navigations to hover them</h4>
+        </div>
+
+        <div >
+            <nav class="t4_sidebar green"></nav>
+            <nav class="t4_sidebar blue"></nav>
+            <nav class="t4_sidebar red"></nav>
+            <nav class="t4_sidebar gray"></nav>
+        </div>
+    </div>
+    <br>
+    <button><a href="index.html"  style="text-decoration: none;">Back</a></button>
+    
+</body>
+</html>

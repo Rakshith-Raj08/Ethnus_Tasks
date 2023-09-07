@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h3>Task-5</h3>
+    <hr>
+    <br>
+    <form action="process_form.php" method="post" style="display: grid; width: fit-content;">
+        <h2 style="justify-self: center; width: fit-content; margin: 5px; color: blue;">Resgistration form</h2>
+        <table style="border: solid black; border-width: thin; width:fit-content ;">
+            <tr >
+                <td style="width: 180px; border: solid black; border-width: thin; text-align: center; font-weight: bold;" ><label for="fullname">First Name:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="text" id="fullname" name="Fullname" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="username">Last Name:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="text" id="username" name="Username" required style="width:98.5%;" ></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="password">Email:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="email" id="password" name="Password" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="repassword">Password:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="password" id="repassword" name="RePassword" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="repassword">Re-enter Password:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="password" id="repassword" name="RePassword" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="address">Gender:</label></td>
+            
+                    <td> <input type="radio" name="color" value="red"> Male <br> <hr><input type="radio" name="color" value="blue"> Female </td>
+                        
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="address">Age:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="text" id="address" name="Address" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="address">Address:</label></td>
+                <td style="border: solid black; border-width: thin;"><textarea id="address" name="Address" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="age">State:</label></td>
+                <td style="border: solid black; border-width: thin;"><input type="number" id="age" name="Age" required style="width:98.5%;"></td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="gender">Country:</label></td>
+                <td style="border: solid black; border-width: thin;">
+                    <select id="gender" name="gender">
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Bhutan">Bhutan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: solid black; border-width: thin; text-align: center; font-weight: bold;"><label for="newsletter">Languages Known:</label></td>
+                <td>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">English</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Kannada</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Hindi</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Telugu</label>
+                </td>
+            </tr>
+            <tr>    
+                <td colspan="2" style="border: solid black; border-width: thin;">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Hereby I declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr style="text-align:end;" >
+                <td colspan="2"  style="border: solid black; border-width: thin;">Login to <a href="#">Ethnus</a> Website</td>
+            </tr>
+        </table>
+    
+        <input type="submit" value="Register" style="justify-self: center; width: fit-content; margin: 5px;">
+    </form>
+    
+        <br>
+        <button><a href="index.html"  style="text-decoration: none;">Back</a></button>
+    
+</body>
+</html>
